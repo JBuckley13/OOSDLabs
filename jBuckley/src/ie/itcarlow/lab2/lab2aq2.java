@@ -3,7 +3,7 @@ package ie.itcarlow.lab2;
 //Student Name 		: 	Julie Buckley
 //Student Id Number	: 	C00200976
 //Date 				: 	12/10/2021
-//Purpose 			: 	Lab 2a Question 1
+//Purpose 			: 	Lab 2a Question 2
 
 public class lab2aq2 {
 
