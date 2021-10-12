@@ -17,10 +17,12 @@ public class HotelRoom {
 		setRoomType("");
 	}
 	
-	public HotelRoom(int roomN, String roomT)	// Constructor #2
+	public HotelRoom(int roomN, String roomT, int roomS, double roomR)	// Constructor #2
 	{											// Overloaded
-		setRoomNumber(roomN);
-		setRoomType(roomT);
+		setRoomNumber(roomN);					// sets room Number
+		setRoomType(roomT);						// sets room Type
+		setRoomStatus(roomS);					// sets room Status
+		setRoomRate(roomR);						// sets room Rate
 	}
 	
 	public void setRoomNumber(int roomN)	// Setter for Room Number
