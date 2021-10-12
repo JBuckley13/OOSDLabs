@@ -6,8 +6,10 @@ package ie.itcarlow.lab2;
 //Purpose 			: 	Implements a HotelRoom class.
 //						
 public class HotelRoom {
-	private int roomNumber; // Private Integer for Room Number
-	private String roomType; // Private String for Room Type
+	private int roomNumber; 	// Private Integer for Room Number
+	private String roomType; 	// Private String for Room Type
+	private int roomStatus; 	// Private Integer for Room Status (0 for Vacant, 1 for Occupied)
+	private double roomRate;	// Private Double for Nightly Room Rate
 	
 	public HotelRoom() // Constructor #1
 	{
@@ -31,6 +33,16 @@ public class HotelRoom {
 		roomType = roomT;
 	}
 	
+	public void setRoomStatus(int roomS)		// Setter for Room Status
+	{
+		roomStatus = roomS;
+	}
+	
+	public void setRoomRate(double roomR)	// Setter for Room Rate
+	{
+		roomRate = roomR;
+	}
+	
 	public int getRoomNumber()	// Getter for Room Number
 	{
 		return roomNumber;
@@ -40,4 +52,15 @@ public class HotelRoom {
 	{
 		return roomType;
 	}
+	
+	public int getRoomStatus()	// Getter for Room Status (0/1 - Vacant/Occupied)
+	{
+		return roomStatus;
+	}
+	
+	public double getRoomRate()	// Getter for Nightly Room Rate
+	{
+		return roomRate;
+	}
+	
 }	// End HotelRoom class
