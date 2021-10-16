@@ -65,4 +65,16 @@ public class HotelRoom {
 		return roomRate;
 	}
 	
+	public boolean isOccupied() 
+	{
+		if (roomStatus == 1)	
+		{
+			return true;
+		}
+		else 
+		{
+			return false;
+		}
+	}
+	
 }	// End HotelRoom class
