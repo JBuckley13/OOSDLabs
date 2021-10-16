@@ -55,6 +55,49 @@ public class Rectangle {
 		return rectangleWidth;
 	}
 	
+	public double getArea() // Method for getting rectangles area
+	{
+		double area;
+		
+		area = rectangleLength * rectangleWidth;
+		return area;
+	}
+	
+	public double getPerimeter() // Method for getting rectangles perimeter
+	{
+		double perimeter;
+		
+		perimeter = (rectangleLength * 2) + (rectangleWidth * 2);
+		return perimeter;
+	}
+	
+	public void printRectangle() // Method to print the rectangle
+	{
+		int index;
+		int index2;
+		for (index = 0; index <= (int)rectangleWidth - 1; index ++)
+		{
+			System.out.print("* ");
+		}
+		
+		for (index2 = 0; index2 <= (int)rectangleLength - 3; index2++)
+		{
+			System.out.println("");
+			System.out.print("*");
+			for (index = 0; index <= (int)rectangleWidth - 2; index ++)
+			{
+				System.out.print("  ");
+			}
+			System.out.print("*");
+		}
+		System.out.println("");
+		for (index = 0; index <= (int)rectangleWidth - 1; index ++)
+		{
+			System.out.print("* ");
+		}
+			
+	}
+	
 	public String toString() // toString() Method
 	{
 		String myString;
@@ -62,6 +105,8 @@ public class Rectangle {
 		myString = "";
 		myString += "\n Length = " + getLength();
 		myString += "\n Width = " + getWidth();
+		myString += "\n Area = " + getArea();
+		myString += "\n Perimeter = " + getPerimeter();
 		return myString;
 	}
 }
