@@ -5,7 +5,7 @@ package ie.itcarlow.lab3;
 //Date 				: 	21/10/2021
 //Purpose 			: 	Lab 3 Question 2
 
-public class SavingsAccount {
+public class SavingsAccount{
 	
 	private static int numberOfAccounts = 0; //
 	public static double annualInterestRate;
